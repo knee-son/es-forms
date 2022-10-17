@@ -33,18 +33,19 @@
             this.materialFloatingActionButton1 = new MaterialSkin.Controls.MaterialFloatingActionButton();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.materialCard4 = new MaterialSkin.Controls.MaterialCard();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
-            this.label2 = new System.Windows.Forms.Label();
-            this.materialTabControl2 = new MaterialSkin.Controls.MaterialTabControl();
             this.materialContextMenuStrip2 = new MaterialSkin.Controls.MaterialContextMenuStrip();
             this.materialToolStripMenuItem1 = new MaterialSkin.Controls.MaterialToolStripMenuItem();
             this.eqwrToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.qwerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.qwerqToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.qwerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            this.label2 = new System.Windows.Forms.Label();
+            this.materialTabControl2 = new MaterialSkin.Controls.MaterialTabControl();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
@@ -52,30 +53,29 @@
             this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
             this.label1 = new System.Windows.Forms.Label();
             this.Phone2 = new System.Windows.Forms.TabPage();
-            this.Phone3 = new System.Windows.Forms.TabPage();
-            this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
-            this.materialCard4 = new MaterialSkin.Controls.MaterialCard();
             this.materialCard5 = new MaterialSkin.Controls.MaterialCard();
             this.label4 = new System.Windows.Forms.Label();
+            this.Phone3 = new System.Windows.Forms.TabPage();
             this.materialCard6 = new MaterialSkin.Controls.MaterialCard();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabPage6.SuspendLayout();
+            this.materialCard4.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.materialContextMenuStrip2.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.materialCard1.SuspendLayout();
             this.materialTabControl2.SuspendLayout();
-            this.materialContextMenuStrip2.SuspendLayout();
             this.materialTabControl1.SuspendLayout();
             this.Phone1.SuspendLayout();
             this.materialCard3.SuspendLayout();
             this.Phone2.SuspendLayout();
-            this.Phone3.SuspendLayout();
-            this.materialCard2.SuspendLayout();
-            this.materialCard4.SuspendLayout();
             this.materialCard5.SuspendLayout();
+            this.Phone3.SuspendLayout();
             this.materialCard6.SuspendLayout();
+            this.materialCard2.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialFloatingActionButton1
@@ -117,15 +117,30 @@
             this.tabPage6.Text = "tabPage6";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // materialCard4
+            // 
+            this.materialCard4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.materialCard4.AutoSize = true;
+            this.materialCard4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard4.Controls.Add(this.panel1);
+            this.materialCard4.Depth = 0;
+            this.materialCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard4.Location = new System.Drawing.Point(0, 0);
+            this.materialCard4.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard4.Name = "materialCard4";
+            this.materialCard4.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard4.Size = new System.Drawing.Size(424, 469);
+            this.materialCard4.TabIndex = 6;
+            // 
             // panel1
             // 
             this.panel1.AllowDrop = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel1.ContextMenuStrip = this.materialContextMenuStrip2;
             this.panel1.Controls.Add(this.label3);
             this.panel1.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.panel1.Location = new System.Drawing.Point(38, 42);
+            this.panel1.Location = new System.Drawing.Point(6, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(316, 363);
             this.panel1.TabIndex = 1;
@@ -140,60 +155,6 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "bro\r\nsana okay\r\nka\r\nlang";
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.materialCard1);
-            this.tabPage5.ImageIndex = 1;
-            this.tabPage5.Location = new System.Drawing.Point(4, 23);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(424, 465);
-            this.tabPage5.TabIndex = 1;
-            this.tabPage5.Text = "tabPage5";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // materialCard1
-            // 
-            this.materialCard1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.materialCard1.AutoSize = true;
-            this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard1.Controls.Add(this.materialFloatingActionButton1);
-            this.materialCard1.Controls.Add(this.label2);
-            this.materialCard1.Depth = 0;
-            this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(0, 0);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
-            this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(424, 465);
-            this.materialCard1.TabIndex = 5;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(31, 55);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(246, 288);
-            this.label2.TabIndex = 3;
-            this.label2.Text = resources.GetString("label2.Text");
-            // 
-            // materialTabControl2
-            // 
-            this.materialTabControl2.ContextMenuStrip = this.materialContextMenuStrip2;
-            this.materialTabControl2.Controls.Add(this.tabPage5);
-            this.materialTabControl2.Controls.Add(this.tabPage6);
-            this.materialTabControl2.Depth = 0;
-            this.materialTabControl2.ImageList = this.imageList1;
-            this.materialTabControl2.Location = new System.Drawing.Point(23, 182);
-            this.materialTabControl2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabControl2.Multiline = true;
-            this.materialTabControl2.Name = "materialTabControl2";
-            this.materialTabControl2.SelectedIndex = 0;
-            this.materialTabControl2.Size = new System.Drawing.Size(432, 492);
-            this.materialTabControl2.TabIndex = 7;
             // 
             // materialContextMenuStrip2
             // 
@@ -240,6 +201,64 @@
             this.qwerToolStripMenuItem1.Name = "qwerToolStripMenuItem1";
             this.qwerToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
             this.qwerToolStripMenuItem1.Text = "qwer";
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.materialCard1);
+            this.tabPage5.ImageIndex = 1;
+            this.tabPage5.Location = new System.Drawing.Point(4, 23);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(424, 465);
+            this.tabPage5.TabIndex = 1;
+            this.tabPage5.Text = "tabPage5";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // materialCard1
+            // 
+            this.materialCard1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.materialCard1.AutoSize = true;
+            this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard1.Controls.Add(this.materialFloatingActionButton1);
+            this.materialCard1.Controls.Add(this.label2);
+            this.materialCard1.Depth = 0;
+            this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard1.Location = new System.Drawing.Point(0, 0);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard1.Name = "materialCard1";
+            this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard1.Size = new System.Drawing.Size(424, 465);
+            this.materialCard1.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(17, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(242, 234);
+            this.label2.TabIndex = 3;
+            this.label2.Text = resources.GetString("label2.Text");
+            // 
+            // materialTabControl2
+            // 
+            this.materialTabControl2.ContextMenuStrip = this.materialContextMenuStrip2;
+            this.materialTabControl2.Controls.Add(this.tabPage5);
+            this.materialTabControl2.Controls.Add(this.tabPage6);
+            this.materialTabControl2.Depth = 0;
+            this.materialTabControl2.ImageList = this.imageList1;
+            this.materialTabControl2.Location = new System.Drawing.Point(23, 182);
+            this.materialTabControl2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabControl2.Multiline = true;
+            this.materialTabControl2.Name = "materialTabControl2";
+            this.materialTabControl2.SelectedIndex = 0;
+            this.materialTabControl2.Size = new System.Drawing.Size(432, 492);
+            this.materialTabControl2.TabIndex = 7;
+            // 
+            // serialPort1
+            // 
+            this.serialPort1.PortName = "COM4";
             // 
             // materialTabSelector1
             // 
@@ -300,7 +319,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(92, 121);
+            this.label1.Location = new System.Drawing.Point(13, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(246, 288);
             this.label1.TabIndex = 4;
@@ -316,47 +335,6 @@
             this.Phone2.TabIndex = 3;
             this.Phone2.Text = "Phone 2";
             this.Phone2.UseVisualStyleBackColor = true;
-            // 
-            // Phone3
-            // 
-            this.Phone3.Controls.Add(this.materialCard6);
-            this.Phone3.Location = new System.Drawing.Point(4, 23);
-            this.Phone3.Name = "Phone3";
-            this.Phone3.Padding = new System.Windows.Forms.Padding(3);
-            this.Phone3.Size = new System.Drawing.Size(416, 531);
-            this.Phone3.TabIndex = 4;
-            this.Phone3.Text = "Phone 3";
-            this.Phone3.UseVisualStyleBackColor = true;
-            // 
-            // materialCard2
-            // 
-            this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard2.Controls.Add(this.materialTabControl1);
-            this.materialCard2.Depth = 0;
-            this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard2.Location = new System.Drawing.Point(472, 116);
-            this.materialCard2.Margin = new System.Windows.Forms.Padding(14);
-            this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard2.Name = "materialCard2";
-            this.materialCard2.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard2.Size = new System.Drawing.Size(424, 554);
-            this.materialCard2.TabIndex = 9;
-            // 
-            // materialCard4
-            // 
-            this.materialCard4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.materialCard4.AutoSize = true;
-            this.materialCard4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard4.Controls.Add(this.panel1);
-            this.materialCard4.Depth = 0;
-            this.materialCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard4.Location = new System.Drawing.Point(0, 0);
-            this.materialCard4.Margin = new System.Windows.Forms.Padding(14);
-            this.materialCard4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard4.Name = "materialCard4";
-            this.materialCard4.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard4.Size = new System.Drawing.Size(424, 469);
-            this.materialCard4.TabIndex = 6;
             // 
             // materialCard5
             // 
@@ -384,6 +362,17 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Phone 2 messages will be shown here.";
             // 
+            // Phone3
+            // 
+            this.Phone3.Controls.Add(this.materialCard6);
+            this.Phone3.Location = new System.Drawing.Point(4, 23);
+            this.Phone3.Name = "Phone3";
+            this.Phone3.Padding = new System.Windows.Forms.Padding(3);
+            this.Phone3.Size = new System.Drawing.Size(416, 531);
+            this.Phone3.TabIndex = 4;
+            this.Phone3.Text = "Phone 3";
+            this.Phone3.UseVisualStyleBackColor = true;
+            // 
             // materialCard6
             // 
             this.materialCard6.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -408,21 +397,22 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(265, 18);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Phone 3 Messages will be shown here.";
+            this.label5.Text = "Phone 3 messages will be shown here.";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // button1
+            // materialCard2
             // 
-            this.button1.BackColor = System.Drawing.Color.Lime;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Location = new System.Drawing.Point(283, 104);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(73, 72);
-            this.button1.TabIndex = 5;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard2.Controls.Add(this.materialTabControl1);
+            this.materialCard2.Depth = 0;
+            this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard2.Location = new System.Drawing.Point(472, 116);
+            this.materialCard2.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard2.Name = "materialCard2";
+            this.materialCard2.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard2.Size = new System.Drawing.Size(424, 554);
+            this.materialCard2.TabIndex = 9;
             // 
             // button2
             // 
@@ -430,7 +420,7 @@
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(378, 104);
+            this.button2.Location = new System.Drawing.Point(257, 104);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(73, 72);
             this.button2.TabIndex = 10;
@@ -438,31 +428,46 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(354, 104);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(73, 72);
+            this.button1.TabIndex = 11;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(922, 697);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.materialCard2);
             this.Controls.Add(this.materialTabControl2);
             this.Controls.Add(this.materialTabSelector1);
             this.Name = "Form1";
             this.RightToLeftLayout = true;
-            this.Text = "Google\'s Material Design for your windows forms.";
+            this.Text = "Windows Form for Application Layer";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
+            this.materialCard4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.materialContextMenuStrip2.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
             this.materialTabControl2.ResumeLayout(false);
-            this.materialContextMenuStrip2.ResumeLayout(false);
             this.materialTabControl1.ResumeLayout(false);
             this.Phone1.ResumeLayout(false);
             this.Phone1.PerformLayout();
@@ -470,14 +475,13 @@
             this.materialCard3.PerformLayout();
             this.Phone2.ResumeLayout(false);
             this.Phone2.PerformLayout();
-            this.Phone3.ResumeLayout(false);
-            this.Phone3.PerformLayout();
-            this.materialCard2.ResumeLayout(false);
-            this.materialCard4.ResumeLayout(false);
             this.materialCard5.ResumeLayout(false);
             this.materialCard5.PerformLayout();
+            this.Phone3.ResumeLayout(false);
+            this.Phone3.PerformLayout();
             this.materialCard6.ResumeLayout(false);
             this.materialCard6.PerformLayout();
+            this.materialCard2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -512,8 +516,8 @@
         private System.Windows.Forms.Label label4;
         private MaterialSkin.Controls.MaterialCard materialCard6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

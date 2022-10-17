@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO.Ports;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
@@ -24,6 +25,22 @@ namespace Material_Design_Elements
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Teal500, Primary.Teal700, Primary.Teal200, Accent.Pink200, TextShade.WHITE);
+
+            /*
+            serialPort1.PortName = "COM4";
+            serialPort1.BaudRate = 9600;
+            serialPort1.Open();
+            serialPort1.Parity = Parity.None;
+            serialPort1.DataBits = 8;
+            serialPort1.StopBits = StopBits.One;
+            serialPort1.Handshake = Handshake.XOnXOff;
+            */
+
+            serialPort1.Open();
+            serialPort1.DtrEnable = true;
+            Console.WriteLine("💩 the bullcrap just began!");
+            Thread.Sleep(3000);
+            MessageBox.Show(serialPort1.ReadExisting());
         }
 
         MaterialSkinManager ThemeManager = MaterialSkinManager.Instance;
@@ -109,7 +126,8 @@ namespace Material_Design_Elements
 
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            label2.Text  += serialPort1.ReadExisting();
+            label2.Text = serialPort1.ReadExisting();
+            Console.WriteLine("data read!");
             // this.Invoke(new EventHandler(displayData_event));
         }
         private void displayData_event(object sender, EventArgs e)
@@ -125,12 +143,10 @@ namespace Material_Design_Elements
 
         private void materialButton1_Click_1(object sender, EventArgs e)
         {
-            materialTabControl2.SelectedIndex=0;
         }
 
         private void materialButton2_Click(object sender, EventArgs e)
         {
-            materialTabControl2.SelectedIndex=1;
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -140,7 +156,12 @@ namespace Material_Design_Elements
 
         private void button2_Click(object sender, EventArgs e)
         {
+            materialTabControl2.SelectedIndex = 0;
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            materialTabControl2.SelectedIndex = 1;
         }
     }
 }
