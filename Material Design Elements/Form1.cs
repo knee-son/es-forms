@@ -12,11 +12,14 @@ using System.Windows.Forms;
 using System.Xml.Linq;
 using MaterialSkin;
 using MaterialSkin.Controls;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Material_Design_Elements
 {
     public partial class Form1 : MaterialForm
     {
+        private String txt = "", light = "";
+        private bool locked;
         public Form1()
         {
             InitializeComponent();
@@ -26,21 +29,11 @@ namespace Material_Design_Elements
             materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Teal500, Primary.Teal700, Primary.Teal200, Accent.Pink200, TextShade.WHITE);
 
-            /*
-            serialPort1.PortName = "COM4";
-            serialPort1.BaudRate = 9600;
-            serialPort1.Open();
-            serialPort1.Parity = Parity.None;
-            serialPort1.DataBits = 8;
-            serialPort1.StopBits = StopBits.One;
-            serialPort1.Handshake = Handshake.XOnXOff;
-            */
-
-            serialPort1.Open();
             serialPort1.DtrEnable = true;
+            serialPort1.ReceivedBytesThreshold = 9;
+            serialPort1.DataReceived += new SerialDataReceivedEventHandler(serialPort1_DataReceived);
+            serialPort1.Open();
             Console.WriteLine("💩 the bullcrap just began!");
-            Thread.Sleep(3000);
-            MessageBox.Show(serialPort1.ReadExisting());
         }
 
         MaterialSkinManager ThemeManager = MaterialSkinManager.Instance;
@@ -121,20 +114,40 @@ namespace Material_Design_Elements
 
         private void materialFloatingActionButton1_Click(object sender, EventArgs e)
         {
-            label2.Text = "";
+            txt = "";
+            label2.Text = txt;
+            label2.Text = serialPort1.ReadExisting();
         }
 
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            label2.Text = serialPort1.ReadExisting();
-            Console.WriteLine("data read!");
-            // this.Invoke(new EventHandler(displayData_event));
+            String incoming = serialPort1.ReadExisting().ToString();
+            if (incoming.Contains("unlock"))
+            {
+                Console.WriteLine("door unlocked!");
+                locked = false;
+                this.Invoke(new EventHandler(displayData_event));
+            }
+            else if (incoming.Contains("lock"))
+            {
+                Console.WriteLine("door locked!");
+                locked = true;
+                this.Invoke(new EventHandler(displayData_event));
+            }
+            else if (incoming.Contains("Light:"))
+            {
+                //light = incoming.Substring(' ', '%');
+            }
+            txt += incoming;
+            SetText(txt.ToString());
         }
         private void displayData_event(object sender, EventArgs e)
         {
             dateTime = DateTime.Now;
-            string time = dateTime.Hour + ":" + dateTime.Minute + ":" + dateTime.Second;
-            label2.Text = time + "\t\t\t\t\t" + "this is a certified hood classic";
+            string time = "\n\n" + dateTime.Hour + ":" + dateTime.Minute + ":" + dateTime.Second;
+            label3.Text += time + " >>\t\t\t\t\t" + (locked?"Door has been locked!": "Door has been locked!");
+
+            materialLabel2.Text = "Light: "+light;
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -162,6 +175,34 @@ namespace Material_Design_Elements
         private void button1_Click(object sender, EventArgs e)
         {
             materialTabControl2.SelectedIndex = 1;
+        }
+
+        delegate void SetTextCallback(string text);
+
+        private void SetText(string text)
+        {
+            // InvokeRequired required compares the thread ID of the
+            // calling thread to the thread ID of the creating thread.
+            // If these threads are different, it returns true.
+            if (this.label2.InvokeRequired)
+            {
+                SetTextCallback d = new SetTextCallback(SetText);
+                this.Invoke(d, new object[] { text });
+            }
+            else
+            {
+                this.label2.Text = text;
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialLabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
