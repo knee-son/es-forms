@@ -44,6 +44,7 @@
             this.qwerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.materialTabControl2 = new MaterialSkin.Controls.MaterialTabControl();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
@@ -61,14 +62,13 @@
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.tabPage6.SuspendLayout();
             this.materialCard4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.materialContextMenuStrip2.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.materialCard1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.materialTabControl2.SuspendLayout();
             this.materialTabControl1.SuspendLayout();
             this.Phone1.SuspendLayout();
@@ -78,7 +78,6 @@
             this.Phone3.SuspendLayout();
             this.materialCard6.SuspendLayout();
             this.materialCard2.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialFloatingActionButton1
@@ -236,6 +235,15 @@
             this.materialCard1.Size = new System.Drawing.Size(435, 465);
             this.materialCard1.TabIndex = 5;
             // 
+            // panel2
+            // 
+            this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Location = new System.Drawing.Point(6, 17);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(412, 370);
+            this.panel2.TabIndex = 5;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -327,9 +335,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(13, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(246, 288);
+            this.label1.Size = new System.Drawing.Size(169, 18);
             this.label1.TabIndex = 4;
-            this.label1.Text = resources.GetString("label1.Text");
+            this.label1.Text = "Phone logs appear here.";
             // 
             // Phone2
             // 
@@ -448,34 +456,12 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // panel2
-            // 
-            this.panel2.AutoScroll = true;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(6, 17);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(412, 374);
-            this.panel2.TabIndex = 5;
-            // 
-            // materialLabel2
-            // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(33, 139);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(45, 19);
-            this.materialLabel2.TabIndex = 13;
-            this.materialLabel2.Text = "Light: ";
-            // 
             // Form1
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(922, 697);
-            this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.materialCard2);
@@ -494,6 +480,8 @@
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.materialCard1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.materialTabControl2.ResumeLayout(false);
             this.materialTabControl1.ResumeLayout(false);
             this.Phone1.ResumeLayout(false);
@@ -509,10 +497,7 @@
             this.materialCard6.ResumeLayout(false);
             this.materialCard6.PerformLayout();
             this.materialCard2.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -549,7 +534,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
     }
 }
 

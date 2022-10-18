@@ -33,7 +33,7 @@ namespace Material_Design_Elements
             serialPort1.ReceivedBytesThreshold = 9;
             serialPort1.DataReceived += new SerialDataReceivedEventHandler(serialPort1_DataReceived);
             serialPort1.Open();
-            Console.WriteLine("💩 the bullcrap just began!");
+            serialPort1.ReadExisting();
         }
 
         MaterialSkinManager ThemeManager = MaterialSkinManager.Instance;
@@ -121,6 +121,7 @@ namespace Material_Design_Elements
 
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
+            Thread.Sleep(300);
             String incoming = serialPort1.ReadExisting().ToString();
             if (incoming.Contains("unlock"))
             {
@@ -134,9 +135,16 @@ namespace Material_Design_Elements
                 locked = true;
                 this.Invoke(new EventHandler(displayData_event));
             }
-            else if (incoming.Contains("Light:"))
+            else if (incoming.Contains("Light"))
             {
-                //light = incoming.Substring(' ', '%');
+                int first = incoming.IndexOf(" ");
+                int last = incoming.IndexOf("%");
+                if(first>0 && last>0)
+                {
+                    light = incoming.Substring(first, last-first);
+                    Console.WriteLine(first+ ", " +last);
+                    Console.WriteLine(light);
+                }
             }
             txt += incoming;
             SetText(txt.ToString());
@@ -145,9 +153,8 @@ namespace Material_Design_Elements
         {
             dateTime = DateTime.Now;
             string time = "\n\n" + dateTime.Hour + ":" + dateTime.Minute + ":" + dateTime.Second;
-            label3.Text += time + " >>\t\t\t\t\t" + (locked?"Door has been locked!": "Door has been locked!");
-
-            materialLabel2.Text = "Light: "+light;
+            label3.Text += time + "  >>\t\t\t\t\t" + (locked?"Door has been locked!": "Door has been locked!");
+            label1.Text += ("\n" + time + "  >>\t\t\t\t\t" + (locked ? "🔐 Door has been locked!" : "🔓 Door has been unlocked!"));
         }
 
         private void label3_Click(object sender, EventArgs e)

@@ -404,7 +404,7 @@
         ZccS7hduT1i25AdmCpxQvK7YSq+aP/dULwwt2dMxpctsZYxxJplCw2CVFdLk6JbVFsUlKvuRMv4W3z8l
         LkNcK5jiGCGDhe77UX/wu1s32ddbSApFoPrJ8946oGYbvrY87/PQ876OoPIRLuyiP5OHwXfRt4pa+wHU
         b8DZZVEzduB8E5ofsrqj+1KlzEAyCa8n8k2z0HgNwflCbz/7HN9BXLqauIK9fehMSfZCmXfXlvb25xm/
-        PyLfbalypYDGab0AAAAJcEhZcwAACw0AAAsNAe0HwCwAAAAHdElNRQfmChEFIC7hRZHiAAAAFHRFWHRD
+        PyLfbalypYDGab0AAAAJcEhZcwAACwwAAAsMAT9AIsgAAAAHdElNRQfmChEFIC7hRZHiAAAAFHRFWHRD
         b21tZW50AHJlZnJlc2ggaWNvbgQB5ToAAC1eSURBVHhe7d3PrzdXfR/w+IlEU4qFAzw2GDVtwHEMBpxI
         +RParLrMtptK7Lpp2dZ71qibLCo1u1TKikq1WNBGNAhjMDgqCYGAiDEGQdQUFwewHZO+3/UZ5fr6Ps9z
         f9/vOfN6SW8REcB3zsx8Pt85M3Pml4Dr8fd///e/nNzuv45/CwCYSZr4e5P/lvz2+L81dQCYSZr3+5Pn
@@ -887,7 +887,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB2
-        CQAAAk1TRnQBSQFMAgEBAwEAATABAAEwAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CQAAAk1TRnQBSQFMAgEBAwEAAUABAAFAAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -936,24 +936,6 @@
   <metadata name="serialPort1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>354, 18</value>
   </metadata>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Lorem Ipsum is simply dummy
-text of the printing and typesetting 
-industry. Lorem Ipsum has been
-the industry's standard dummy
-text ever since the 1500s, when an
-unknown printer took a galley of
-type and scrambled it to make a 
-type specimen book. It has survived
-not only five centuries, but also
- the leap into electronic typesetting, 
-remaining essentially 
-unchanged. It was popularised 
-in the 1960s with the release of 
-Letraset sheets containing Lorem 
-Ipsum passages, and more recently 
-with desktop publishing software </value>
-  </data>
   <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAANAAAADQCAYAAAB2pO90AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAu
